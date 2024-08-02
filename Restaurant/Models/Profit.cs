@@ -7,7 +7,9 @@ namespace Restaurant.Models
     {
         [Key]
         public string Id { get; set; }
+        [Required]
         public DateTime Date { get; set; }
+        [Required]// [Howmush]total amount of money from orders
         public double Amount { get; set; }
 
         [ForeignKey("Hall")]

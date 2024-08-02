@@ -7,6 +7,7 @@ namespace Restaurant.Models
     {
         [Key]
         public string Id { get; set; }
+        // default value is DateTime.Now
         public DateTime OrderTime { get; set; }
 
         [ForeignKey("Staff")]

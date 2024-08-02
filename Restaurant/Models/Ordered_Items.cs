@@ -7,7 +7,9 @@ namespace Restaurant.Models
     {
         [Key]
         public string Id { get; set; }
+        [Required]
         public int Quantity { get; set; }
+        [Required]
         public double Price { get; set; }
 
         [ForeignKey("Order")]

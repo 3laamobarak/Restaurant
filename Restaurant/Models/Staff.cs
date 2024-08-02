@@ -8,18 +8,27 @@ namespace Restaurant.Models
     {
         [Key]
         public string Id { get; set; }
+        [Required]
+        //[NID]
         public int NID { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Address { get; set; }
+        [Required]
         public string Phone { get; set; }
+        // [age calc with Nid]
         public int Age { get; set; }
+        // try to make it with nid
         public Gender Gender { get; set; }
         public string Image { get; set; }
-        public int Holidays { get; set; }
+        public int HolidaysTaken { get; set; }
         public double BaseSalary { get; set; }
         public double Bonus { get; set; }
         public int DeductedDays { get; set; }
+        //[CountedSalary]
         public double Salary { get; set; }
+        [Required]
         public StaffType Type { get; set; }
 
         [ForeignKey("Hall")]

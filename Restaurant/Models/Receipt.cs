@@ -16,7 +16,7 @@ namespace Restaurant.Models
         [ForeignKey("Table")]
         public string TableId { get; set; }
         public virtual Table Table { get; set; }
-
+        
         [ForeignKey("Order")]
         public string OrderId { get; set; }
         public virtual Order Order { get; set; }

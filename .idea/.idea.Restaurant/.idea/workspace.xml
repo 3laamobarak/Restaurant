@@ -9,20 +9,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b348add1-fc2c-4575-921d-164a7de31673" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Restaurant/Models/Hall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Hall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/14ebd73a-73f4-4be5-890c-6db0d5d8fe29.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/49602dd4-e0f1-454a-8893-2ad7a8ef688b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/860891b4-91ad-41fb-a95c-ab1fbd75c1a1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/877628c7-8f39-4eac-9c17-b165d6e8f070.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/b4c654af-1d2d-4635-8e8e-592cb243658f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/Models/Enum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Enum.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Order.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Ordered_Items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Ordered_Items.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Profit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Profit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Receipt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Receipt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/Models/RestDBcontext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/RestDBcontext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Restaurant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Restaurant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Staff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Staff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/Models/StorageRoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/StorageRoom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Models/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Models/Table.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/Restaurant.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Restaurant.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/ref/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/ref/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/refint/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/refint/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.targets" afterDir="false" />
@@ -40,10 +68,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2k6mESSBnQQUsmNIsBGcNuUzTfw" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -52,26 +84,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Restaurant: http.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\DELL\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\DELL\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\DELL\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\DELL\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\DELL\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\DELL\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Restaurant: http">
     <configuration name="Restaurant: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Restaurant/Restaurant.csproj" />
@@ -112,14 +149,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722612304652</updated>
-      <workItem from="1722612326595" duration="2470000" />
+      <workItem from="1722612326595" duration="2764000" />
+      <workItem from="1722622204449" duration="2393000" />
+      <workItem from="1722872633130" duration="2431000" />
     </task>
+    <task id="LOCAL-00001" summary="between models and validation">
+      <option name="closed" value="true" />
+      <created>1722614889031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722614889031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="between models and validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="between models and validation" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

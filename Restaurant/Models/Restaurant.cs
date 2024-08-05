@@ -11,11 +11,13 @@ namespace Restaurant.Models
         [Required]
         public string Address { get; set; }
         [Required]
+        [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
         [Required]
+        [DataType(DataType.EmailAddress)]
         public string Mail { get; set; }
         [Required]
-        public string Image { get; set; }
+        public string? Image { get; set; }
         public ICollection<Hall> Halls { get; set; }
     }
 }

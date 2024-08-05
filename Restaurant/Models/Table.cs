@@ -10,10 +10,8 @@ namespace Restaurant.Models
         public string Id { get; set; }
         [Required]
         public int Number { get; set; }
-        [Required]
         public double Cash { get; set; }
-        [Required]// default free
-        public TableStatus Status { get; set; }
+        public TableStatus Status { get; set; } = TableStatus.Free;
 
         [ForeignKey("Hall")]
         public string HallId { get; set; }

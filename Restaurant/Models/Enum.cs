@@ -35,7 +35,7 @@ namespace MS.Data.Enums
         [Description("Occupied")]
         Occupied
     }
-    public enum Gender
+    public enum GenderType
     {
         [Description]
         Male,

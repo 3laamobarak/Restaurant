@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MXCjucMmvmB0wu6Z/XmR4AQY40Ia+LQGiH0KWKqMX8s=",
+  "Hash": "tNwWfU1R82wUZva9KVBJxsxMFtkNskE50IVNZbp61QE=",
   "Source": "Restaurant",
   "BasePath": "_content/Restaurant",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\css\\styles.css",
+      "SourceId": "Restaurant",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\",
+      "BasePath": "_content/Restaurant",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\favicon.ico",

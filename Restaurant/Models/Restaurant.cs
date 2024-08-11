@@ -18,6 +18,6 @@ namespace Restaurant.Models
         public string Mail { get; set; }
         [Required]
         public string? Image { get; set; }
-        public ICollection<Hall> Halls { get; set; }
+        //public ICollection<Hall> Halls { get; set; }
     }
 }

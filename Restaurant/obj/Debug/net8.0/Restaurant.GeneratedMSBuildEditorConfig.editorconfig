@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = I:\Projects\Restaurant\Restaurant
 build_property._RazorSourceGeneratorDebug = 
 
+[I:/Projects/Restaurant/Restaurant/Views/Hall/AddHall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFsbFxBZGRIYWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Projects/Restaurant/Restaurant/Views/Hall/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFsbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [I:/Projects/Restaurant/Restaurant/Views/Hall/ShowHalls.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFsbFxTaG93SGFsbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +36,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [I:/Projects/Restaurant/Restaurant/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Projects/Restaurant/Restaurant/Views/Item/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxBZGRJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Projects/Restaurant/Restaurant/Views/Item/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Projects/Restaurant/Restaurant/Views/Item/showItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxzaG93SXRlbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [I:/Projects/Restaurant/Restaurant/Views/Restaurant/AddRestaurant.cshtml]

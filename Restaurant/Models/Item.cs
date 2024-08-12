@@ -20,7 +20,7 @@ namespace Restaurant.Models
         // number of items ordered
         public string Amount { get; set; }
         public DateTime ExpireDate { get; set; }
-        public ICollection<StorageRoom> StorageRooms { get; set; }
-        public ICollection<Ordered_Items> OrderedItems { get; set; }
+        //public ICollection<StorageRoom> StorageRooms { get; set; }
+        //public ICollection<Ordered_Items> OrderedItems { get; set; }
     }
 }

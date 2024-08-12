@@ -103,6 +103,7 @@
       <workItem from="1722622204449" duration="2393000" />
       <workItem from="1722872633130" duration="2431000" />
       <workItem from="1722883974061" duration="1118000" />
+      <workItem from="1723403962446" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="between models and validation">
       <option name="closed" value="true" />
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722884223059</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ResutaurantCRUD">
+      <option name="closed" value="true" />
+      <created>1723404177938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723404177938</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +172,8 @@
     <MESSAGE value="between models and validation" />
     <MESSAGE value="Services&amp;interfaces" />
     <MESSAGE value="Services&amp;interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Services&amp;interface" />
+    <MESSAGE value="ResutaurantCRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="ResutaurantCRUD" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

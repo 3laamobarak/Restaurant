@@ -1,0 +1,24 @@
+﻿@model Hall
+
+<form asp-action="SaveAddHall" asp-controller="Hall" method="post">
+
+    <div>
+        <input asp-for="Id" type="hidden" value="@Guid.NewGuid().ToString()" />
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="TotalTables"></label>
+        <input asp-for="TotalTables" class="form-control" />
+        <span asp-validation-for="TotalTables" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="AvailableTables"></label>
+        <input asp-for="AvailableTables" class="form-control" />
+        <span asp-validation-for="AvailableTables" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Add" class="btn btn-success" />
+</form>

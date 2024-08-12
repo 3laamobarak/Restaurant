@@ -20,7 +20,7 @@
             <td>
                 <a asp-action="Edit" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a> |
                 <a asp-action="Delete" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
-                <a asp-action="showallhalls" asp-controller="Hall" asp-route-id="@item.Id" >Manage Halls</a>
+                <a asp-action="ShowHalls" asp-controller="Hall" asp-route-id="@item.Id" >Manage Halls</a>
             </td>
         </tr>
     }

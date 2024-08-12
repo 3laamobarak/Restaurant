@@ -1,0 +1,40 @@
+﻿@model Item
+<form asp-action="SaveAdditem" asp-controller="item" method="post">
+    <div>
+        <input asp-for="Id" type="hidden" value="@Guid.NewGuid().ToString()" />
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Type"></label>
+        <select asp-for="Type" class="form-control">
+            <option value="0">Food</option>
+            <option value="1">Drink</option>
+            <option value="2">Dessert</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Available"></label>
+        <input asp-for="Available" class="form-control" />
+        <span asp-validation-for="Available" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Amount"></label>
+        <input asp-for="Amount" class="form-control" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="ExpireDate"></label>
+        <input asp-for="ExpireDate" class="form-control" />
+        <span asp-validation-for="ExpireDate" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Add" class="btn btn-success" />
+</form>

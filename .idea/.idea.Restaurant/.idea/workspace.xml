@@ -112,6 +112,7 @@
       <workItem from="1722883974061" duration="1118000" />
       <workItem from="1723403962446" duration="293000" />
       <workItem from="1723483016554" duration="809000" />
+      <workItem from="1723820988147" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="between models and validation">
       <option name="closed" value="true" />
@@ -161,7 +162,47 @@
       <option name="project" value="LOCAL" />
       <updated>1723483590692</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="CRUD controllers">
+      <option name="closed" value="true" />
+      <created>1723821174576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821174576</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Second push controller">
+      <option name="closed" value="true" />
+      <created>1723821230819</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821230819</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Sec push">
+      <option name="closed" value="true" />
+      <created>1723821275869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821275869</updated>
+    </task>
+    <task id="LOCAL-00010" summary="CRUD controllers">
+      <option name="closed" value="true" />
+      <created>1723821454988</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821454988</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ccc">
+      <option name="closed" value="true" />
+      <created>1723821551864</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821551864</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +220,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -199,7 +240,11 @@
     <MESSAGE value="ResutaurantCRUD" />
     <MESSAGE value="Halls &amp; Items CRUD" />
     <MESSAGE value="Second push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second push" />
+    <MESSAGE value="Second push controller" />
+    <MESSAGE value="Sec push" />
+    <MESSAGE value="CRUD controllers" />
+    <MESSAGE value="ccc" />
+    <option name="LAST_COMMIT_MESSAGE" value="ccc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

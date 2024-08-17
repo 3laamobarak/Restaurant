@@ -1,24 +1,79 @@
 ﻿@model Hall
 
-<form asp-action="SaveAddHall" asp-controller="Hall" method="post">
-
+<form asp-action="SaveAddHall" asp-controller="Hall" method="post" class="add-hall-form">
     <div>
         <input asp-for="Id" type="hidden" value="@Guid.NewGuid().ToString()" />
     </div>
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+    <div class="form-group">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control input-field" />
+        <span asp-validation-for="Name" class="text-danger validation-message"></span>
     </div>
-    <div>
-        <label asp-for="TotalTables"></label>
-        <input asp-for="TotalTables" class="form-control" />
-        <span asp-validation-for="TotalTables" class="text-danger"></span>
+    <div class="form-group">
+        <label asp-for="TotalTables" class="form-label"></label>
+        <input asp-for="TotalTables" class="form-control input-field" />
+        <span asp-validation-for="TotalTables" class="text-danger validation-message"></span>
     </div>
-    <div>
-        <label asp-for="AvailableTables"></label>
-        <input asp-for="AvailableTables" class="form-control" />
-        <span asp-validation-for="AvailableTables" class="text-danger"></span>
+    <div class="form-group">
+        <label asp-for="AvailableTables" class="form-label"></label>
+        <input asp-for="AvailableTables" class="form-control input-field" />
+        <span asp-validation-for="AvailableTables" class="text-danger validation-message"></span>
     </div>
-    <input type="submit" value="Add" class="btn btn-success" />
+    <input type="submit" value="Add" class="btn btn-success add-button" />
 </form>
+
+<style>
+    .add-hall-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+
+        .input-field:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+    .validation-message {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .add-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: aquamarine;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .add-button:hover {
+            background-color: #4ec9b0;
+        }
+</style>

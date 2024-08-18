@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MS.Data.Enums;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 
@@ -6,10 +7,12 @@ namespace Restaurant.Controllers
 {
     public class HallController : Controller
     {
-        IHallService hallService;
-        public HallController(IHallService _hallService)
+        private readonly IHallService hallService;
+        private readonly ITableService tableService;
+        public HallController(IHallService _hallService,ITableService _tableService)
         {
             hallService = _hallService;
+            tableService = _tableService;
         }
         public IActionResult ShowHalls()
         {
@@ -25,6 +28,16 @@ namespace Restaurant.Controllers
             if(ModelState.IsValid)
             {
                 hallService.AddHall(hall);
+                for(int i = 1;i<=hall.TotalTables;i++)
+                {
+                    Table table = new Table();
+                    table.Id=Guid.NewGuid().ToString();
+                    table.Number = i;
+                    table.Status = TableStatus.Free;
+                    table.Cash = 0.0;
+                    table.HallId = hall.Id;
+                    tableService.AddTable(table);
+                }
                 return RedirectToAction("showHalls");
             }
             return View("AddHall",hall);

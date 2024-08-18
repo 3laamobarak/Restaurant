@@ -11,9 +11,9 @@ namespace Restaurant.Controllers
         {
             tableService = _itableService;
         }
-        public IActionResult Showall()
+        public IActionResult ShowTables(string id)
         {
-            var tables = tableService.GetAllTables();
+            var tables = tableService.GetAllTables(id);
             return View(tables);
         }
         public IActionResult AddTable()

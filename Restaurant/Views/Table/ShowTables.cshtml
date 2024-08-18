@@ -1,20 +1,15 @@
-﻿@{
-    Layout = "_Layout2";
-}
-@model List<Hall>
+﻿@model List<Table>
 
-<a asp-action="AddHall" asp-controller="Hall" id="openModal" class="btn btn-alert-success">Add Hall</a>
 <div id="subjectList">
     @foreach (var item in Model)
     {
         <div class="box" id="hall_@item.Id" style="margin: 16px;">
-            <h3 class="box-name">@item.Name</h3>
-            <p class="box-description">Total Tables: @item.TotalTables</p>
-            <p class="box-date">Available Tables: @item.AvailableTables</p>
+            <h3 class="box-name">@item.Number</h3>
+            <p class="box-description">Status: @item.Status</p>
+            <p class="box-date">Cash: @item.Cash $</p>
             <div class="box-buttons">
-                <a asp-action="Edit" asp-controller="Hall" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a>
-                <a asp-action="ShowTables" asp-controller="Table" asp-route-id="@item.Id" asp-route-totalTables="@item.TotalTables" style="background-color : #001f3f;color:white " class="btn btn-alert-success">Manage</a>
-                <a asp-action="Delete" asp-controller="Hall" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
+                <a asp-action="add" asp-controller="Order" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Order</a>
+                <a asp-action="add" asp-controller="Receipt" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Receipt</a>
             </div>
         </div>
     }
@@ -41,7 +36,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 300px;
+        width: 200px;
         padding: 20px;
         border-radius: 10px;
         background-color: #f7f7f7;
@@ -49,10 +44,10 @@
         transition: all 0.3s;
     }
 
-    .box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
 
     .box-name {
         margin: 0;
@@ -93,9 +88,9 @@
         color: black;
     }
 
-    .edit-button:hover, .delete-button:hover {
-        opacity: 0.8;
-    }
+        .edit-button:hover, .delete-button:hover {
+            opacity: 0.8;
+        }
 
     #openModal {
         margin-top: 20px;
@@ -108,7 +103,7 @@
         transition: background-color 0.3s;
     }
 
-    #openModal:hover {
-        background-color: #4ec9b0;
-    }
+        #openModal:hover {
+            background-color: #4ec9b0;
+        }
 </style>

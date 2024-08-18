@@ -10,9 +10,9 @@ namespace Restaurant.Services
         {
             context = _context;
         }
-        public List<Table> GetAllTables()
+        public List<Table> GetAllTables(string hallid)
         {
-            return context.Table.ToList();
+            return context.Table.Where(t=>t.HallId==hallid).OrderBy(t=>t.Number).ToList();
         }
         public Table GetById(string id)
         {

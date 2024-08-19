@@ -1,5 +1,5 @@
 ﻿@model Hall
-<form asp-action="SaveEditHall" asp-controller="Hall" asp-route-id="@Model.Id" method="post">
+<form asp-action="SaveEditHall" asp-controller="Hall" asp-route-id="@Model.Id" asp-route-TotalTable="@Model.TotalTables" method="post">
     <div>
         <input asp-for="Id" type="hidden" value="@Model.Id"/>
     </div>

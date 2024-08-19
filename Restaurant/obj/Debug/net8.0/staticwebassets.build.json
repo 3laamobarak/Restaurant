@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tNwWfU1R82wUZva9KVBJxsxMFtkNskE50IVNZbp61QE=",
+  "Hash": "U5sxDHkUXDH7vZD+sUceiUmtsltN68rXAt41aIV8s1c=",
   "Source": "Restaurant",
   "BasePath": "_content/Restaurant",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg",
+      "SourceId": "Restaurant",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\",
+      "BasePath": "_content/Restaurant",
+      "RelativePath": "Images/Staff/7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg"
     },
     {
       "Identity": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\js\\site.js",

@@ -1,0 +1,42 @@
+﻿@model List<Staff>
+<table class="table">
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>NID</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Role</th>
+        <th>Manager</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="I:\Projects\Restaurant\Restaurant\wwwroot\@item.ImagePath" style="width: 50px; height: 50px;" />
+            </td>
+            <td>@item.Name</td>
+            <td>@item.NID</td>
+            <td>@item.Address</td>
+            <td>@item.Phone</td>
+            <td>@item.Age</td>
+            <td>@item.Salary</td>
+            <td>@item.Type</td>
+            @if(item.ManagerId == null)
+            {
+                <td>@item.Manager</td>   
+            }
+            else
+            {
+                <td>@item.Manager.Name</td>
+            }
+            <td>
+                <a asp-action="Edit" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a> |
+                <a asp-action="Delete" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -69,7 +69,10 @@ namespace Restaurant.Models
                 throw new ArgumentException("Enter the NID first");
             }
         }
-        public string? Image { get; set; }
+        [NotMapped]
+        public IFormFile? Image { get; set; }
+        public string? ImagePath { get; set; }  
+
         public int HolidaysTaken { get; set; } = 0;
         public double BaseSalary { get; set; }
         public double Bonus { get; set; } = 0;
@@ -94,11 +97,11 @@ namespace Restaurant.Models
 
         [ForeignKey("Hall")]
         public string HallId { get; set; }
-        public Hall Hall { get; set; }
+        public Hall? Hall { get; set; }
 
         [ForeignKey("Manager")]
         public string? ManagerId { get; set; }
-        public Staff Manager { get; set; }
-        public ICollection<Order> Orders { get; set; }
+        public Staff? Manager { get; set; }
+        //public ICollection<Order> Orders { get; set; }
     }
 }

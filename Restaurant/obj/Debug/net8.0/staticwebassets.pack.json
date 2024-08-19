@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Restaurant.bundle.scp.css"
     },
     {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg"
+    },
+    {
       "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

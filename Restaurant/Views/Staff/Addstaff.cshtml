@@ -1,0 +1,57 @@
+﻿@model Staff
+<form asp-action="SaveAddStaff" enctype="multipart/form-data" asp-controller="Staff" method="post">
+    <div>
+        <input asp-for="Id" , type="hidden" value="@Guid.NewGuid().ToString()" />
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" , class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="NID"></label>
+        <input asp-for="NID" , class="form-control" />
+        <span asp-validation-for="NID" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Address"></label>
+        <input asp-for="Address" , class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" , class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="BaseSalary"></label>
+        <input asp-for="BaseSalary" , class="form-control" />
+        <span asp-validation-for="BaseSalary" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Type"></label>
+        <select asp-for="Type" class="form-control">
+            <option value="0">Manager</option>
+            <option value="1">Waiter</option>
+            <option value="2">Chef</option>
+            <option value="3">Cashier</option>
+        </select>
+        <span asp-validation-for="Type" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="ManagerId"></label>
+        <input asp-for="ManagerId" , class="form-control" />
+        <span asp-validation-for="ManagerId" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="HallId">Hall</label>
+        <select asp-for="HallId" class="form-control" asp-items="@(new SelectList(ViewData["Hall"] as List<Hall>, "Id", "Name"))"></select>
+        <span asp-validation-for="HallId" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Image"></label>
+        <input asp-for="Image" type="file" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Add" class="btn btn-success" />
+</form>

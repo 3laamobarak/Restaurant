@@ -42,6 +42,12 @@ namespace Restaurant.Services
             context.Table.Remove(table);
             return context.SaveChanges();
         }
+        public int DeleteAll(string hallid)
+        {
+            List<Table> table = context.Table.Where(t=>t.HallId==hallid).ToList();
+            context.Table.RemoveRange(table);
+            return context.SaveChanges();
+        }
 
     }
 }

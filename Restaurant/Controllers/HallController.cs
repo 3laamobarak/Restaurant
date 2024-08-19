@@ -42,14 +42,26 @@ namespace Restaurant.Controllers
             }
             return View("AddHall",hall);
         }
-        public IActionResult Edit(string ID)
+        public IActionResult Edit(string ID,int totaltable)
         {
             Hall hall = hallService.getbyid(ID);
             return View(hall);
         }
-        public IActionResult SaveEditHall([FromRoute]string id,Hall newhall)
+        public IActionResult SaveEditHall([FromRoute]string id,Hall newhall,int totaltable)
         {
+            tableService.DeleteAll(newhall.Id);
+            
             hallService.UpdateHall(id,newhall);
+            for(int i=1;i<=newhall.TotalTables;i++)
+            {
+                Table table=new Table();
+                table.Id=Guid.NewGuid().ToString();
+                table.Number = i;
+                table.Status = TableStatus.Free;
+                table.Cash = 0.0;
+                table.HallId = newhall.Id;
+                tableService.AddTable(table);
+            }
             return RedirectToAction("ShowHalls");
         }
         public IActionResult Delete(string ID)

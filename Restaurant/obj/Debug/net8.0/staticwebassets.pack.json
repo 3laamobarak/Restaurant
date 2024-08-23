@@ -5,8 +5,36 @@
       "PackagePath": "staticwebassets\\Restaurant.bundle.scp.css"
     },
     {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\0bc21d26-102e-4d75-961a-d5738d0544a3_WhatsApp Image 2024-07-11 at 4.47.49 PM.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\0bc21d26-102e-4d75-961a-d5738d0544a3_WhatsApp Image 2024-07-11 at 4.47.49 PM.jpeg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\2e3cda87-ae9d-42db-a17c-28e932709e75_322289463_162203386150983_7946946852108853129_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\2e3cda87-ae9d-42db-a17c-28e932709e75_322289463_162203386150983_7946946852108853129_n.jpg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\389e29ba-6fab-46b1-af78-6c8d38fae420_322289463_162203386150983_7946946852108853129_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\389e29ba-6fab-46b1-af78-6c8d38fae420_322289463_162203386150983_7946946852108853129_n.jpg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\79136a8e-2fe1-4172-bad2-2eaa4e42a238_Screenshot 2024-07-22 164803.png",
+      "PackagePath": "staticwebassets\\Images\\Staff\\79136a8e-2fe1-4172-bad2-2eaa4e42a238_Screenshot 2024-07-22 164803.png"
+    },
+    {
       "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg",
       "PackagePath": "staticwebassets\\Images\\Staff\\7aa3f08f-27fc-407a-a47e-6a9704585139_298375058_758812948723375_8604443004097067285_n.jpg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\9889aaae-e842-4fb8-a774-1cb6c8ad2259_hady.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\9889aaae-e842-4fb8-a774-1cb6c8ad2259_hady.jpg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\e95b8e26-969f-4a41-bfa7-5e515c2060f9_rady.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\e95b8e26-969f-4a41-bfa7-5e515c2060f9_rady.jpg"
+    },
+    {
+      "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\Images\\Staff\\feee985e-e2a2-40a0-9fdd-cfc636b7d65d_e6b67879-bba8-4042-9d72-baa1ae871afb.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staff\\feee985e-e2a2-40a0-9fdd-cfc636b7d65d_e6b67879-bba8-4042-9d72-baa1ae871afb.jpg"
     },
     {
       "Id": "I:\\Projects\\Restaurant\\Restaurant\\wwwroot\\css\\site.css",

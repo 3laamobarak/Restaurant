@@ -1,0 +1,60 @@
+﻿@model Staff
+<form asp-action="SaveEditStaff" asp-controller="Staff" asp-route-id="@Model.Id" method="post">
+    <div>
+        <input asp-for="Id" type="hidden" value="@Model.Id" />
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" value="@Model.Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <div>
+            <label asp-for="NID"></label>
+            <input asp-for="NID" , class="form-control" value="@Model.NID"/>
+            <span asp-validation-for="NID" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Address"></label>
+            <input asp-for="Address" , class="form-control" value="@Model.Address"/>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" , class="form-control" value="@Model.Phone"/>
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="BaseSalary"></label>
+            <input asp-for="BaseSalary" , class="form-control" value="@Model.BaseSalary"/>
+            <span asp-validation-for="BaseSalary" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Type"></label>
+            <select asp-for="Type" class="form-control">
+                <option value="0">Manager</option>
+                <option value="1">Waiter</option>
+                <option value="2">Chef</option>
+                <option value="3">Cashier</option>
+            </select>
+            <span asp-validation-for="Type" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="ManagerId">Manager Name</label>
+            <select asp-for="ManagerId" class="form-control" asp-items="@(new SelectList(ViewData["staff"] as List<Staff> ,"Id","Name",Model.ManagerId))">
+                <option value="">No Manager</option>
+            </select>
+            <span asp-validation-for="ManagerId" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="HallId">Hall</label>
+            <select asp-for="HallId" class="form-control" asp-items="@(new SelectList(ViewData["Hall"] as List<Hall>, "Id", "Name",Model.HallId))"></select>
+            <span asp-validation-for="HallId" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Image"></label>
+            <input asp-for="Image" type="file" class="form-control" value="@Model.ImagePath"/>
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        <input type="submit" value="Edit" class="btn btn-success" />
+</form>

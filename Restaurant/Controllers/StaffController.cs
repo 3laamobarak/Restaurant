@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MS.Data.Enums;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 
@@ -25,13 +26,12 @@ namespace Restaurant.Controllers
         {
             List<Hall> hall = hallService.GetAllHall();
             ViewData["Hall"]= hall;
+            List<Staff> staff = staffService.GetAllManager();
+            ViewData["staff"]=staff;
             return View();
         }
         public async Task<IActionResult> SaveAddStaff(Staff staff)
         {
-            Hall Hall = hallService.getbyid(staff.HallId);
-            staff.Hall = Hall;
-            List<Hall> hall = hallService.GetAllHall();
             if (ModelState.IsValid)
             {
                 if (staff.Image != null)
@@ -50,18 +50,22 @@ namespace Restaurant.Controllers
         }
         public IActionResult Edit(string ID)
         {
+            List<Hall> hall = hallService.GetAllHall();
+            ViewData["Hall"] = hall;
+            List<Staff> staffall = staffService.GetAllManager();
+            ViewData["staff"] = staffall;
             Staff staff = staffService.getbyid(ID);
             return View(staff);
         }
         public IActionResult SaveEditStaff([FromRoute]string id,Staff newstaff)
         {
             staffService.UpdateStaff(id,newstaff);
-            return RedirectToAction("showstaff");
+            return RedirectToAction("showallstaff");
         }
         public IActionResult Delete(string ID)
         {
             staffService.DeleteStaff(ID);
-            return RedirectToAction("showstaff");
+            return RedirectToAction("showallstaff");
         }
     }
 }

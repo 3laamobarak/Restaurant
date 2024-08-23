@@ -39,8 +39,13 @@
         <span asp-validation-for="Type" class="text-danger"></span>
     </div>
     <div>
-        <label asp-for="ManagerId"></label>
-        <input asp-for="ManagerId" , class="form-control" />
+        <label asp-for="ManagerId">Manager Name</label>
+        
+        <select asp-for="ManagerId" class="form-control" asp-items="@(new SelectList(ViewData["staff"] as List<Staff> ,"Id","Name"))">
+            <option value="">No Manager</option>
+        </select>
+
+        @*<input asp-for="ManagerId" , class="form-control" />*@
         <span asp-validation-for="ManagerId" class="text-danger"></span>
     </div>
     <div>

@@ -96,7 +96,7 @@ namespace Restaurant.Models
         public StaffType Type { get; set; }
 
         [ForeignKey("Hall")]
-        public string HallId { get; set; }
+        public string? HallId { get; set; }
         public Hall? Hall { get; set; }
 
         [ForeignKey("Manager")]

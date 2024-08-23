@@ -8,7 +8,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b348add1-fc2c-4575-921d-164a7de31673" name="Changes" comment="" />
+    <list default="true" id="b348add1-fc2c-4575-921d-164a7de31673" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restaurant.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/5b667a9a-59e7-4db7-8e69-d174a41e4a98.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/FileContentIndex/c09716e8-801c-4490-a278-5da3818e80a7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Restaurant/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Restaurant/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/Views/Staff/showallstaff.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/Views/Staff/showallstaff.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/bin/Debug/net8.0/Restaurant.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/Restaurant.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/ref/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/ref/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/refint/Restaurant.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/refint/Restaurant.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/Restaurant.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +145,11 @@
       <workItem from="1723982930602" duration="1852000" />
       <workItem from="1724002731612" duration="731000" />
       <workItem from="1724009871941" duration="934000" />
+      <workItem from="1724105823252" duration="495000" />
+      <workItem from="1724358804372" duration="637000" />
+      <workItem from="1724359776850" duration="373000" />
+      <workItem from="1724361223036" duration="255000" />
+      <workItem from="1724422870052" duration="1217000" />
     </task>
     <task id="LOCAL-00001" summary="between models and validation">
       <option name="closed" value="true" />
@@ -227,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724010129705</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Staff edit image and table fix">
+      <option name="closed" value="true" />
+      <created>1724105965952</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724105965952</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +315,8 @@
     <MESSAGE value="ccc" />
     <MESSAGE value="Edit Halls View and Start Layout" />
     <MESSAGE value="Table reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Table reservation" />
+    <MESSAGE value="Staff edit image and table fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Staff edit image and table fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

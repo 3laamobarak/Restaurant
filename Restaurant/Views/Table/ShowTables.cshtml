@@ -8,8 +8,8 @@
             <p class="box-description">Status: @item.Status</p>
             <p class="box-date">Cash: @item.Cash $</p>
             <div class="box-buttons">
-                <a asp-action="add" asp-controller="Order" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Order</a>
-                <a asp-action="add" asp-controller="Receipt" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Receipt</a>
+                <a asp-action="AddOrder" asp-controller="Order" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Order</a>
+                <a asp-action="ShowReceipts" asp-controller="Receipt" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Receipt</a>
             </div>
         </div>
     }

@@ -1,0 +1,35 @@
+﻿@model List<Ordered_Items>
+<p>Restaurant : </p>
+<p>Hall : </p>
+<p>Table number : </p>
+<p>Table Status :</p>
+@{
+    double Totalcash = 0.0;
+}
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Available</th>
+        <th>Action</th>
+
+    </tr>
+@foreach(var item in Model)
+{
+    <tr>
+        <td>@item.Item.Name</td>
+        <td>@item.Quantity</td>
+        <td>@item.Price</td>
+        @{
+            Totalcash += item.Price;
+        }
+        <td>@item.Item.Available</td>
+        <td>
+            <a asp-action="Edit" asp-controller="OrderedItems" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a> |
+            <a asp-action="Delete" asp-controller="OrderedItems" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
+        </td>
+    </tr>
+}
+</table>
+<a asp-action="AddOrderedItems" asp-controller="OrderedItems" style="background-color :aquamarine" class="btn btn-alert-success">Add New Order</a>

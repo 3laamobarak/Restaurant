@@ -14,9 +14,9 @@ namespace Restaurant.Models
         [Required]
         //[TablesServerd] total tables - busy tables
         public int AvailableTables { get; set; }
-        //[ForeignKey("Restaurant")]
-        //public int RestaurantID { get; set; }
-        //public Restaurant Restaurant { get; set; }
+        [ForeignKey("Restaurant")]
+        public string? RestaurantID { get; set; }
+        public Restaurant? Restaurant { get; set; }
         //public ICollection<Profit> Profits { get; set; }
         //public ICollection<Staff> StaffMembers { get; set; }
         //public ICollection<Table> Tables { get; set; }

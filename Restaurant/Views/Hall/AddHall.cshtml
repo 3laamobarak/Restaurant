@@ -19,6 +19,9 @@
         <input asp-for="AvailableTables" class="form-control input-field" />
         <span asp-validation-for="AvailableTables" class="text-danger validation-message"></span>
     </div>
+    <div>
+        <input asp-for="RestaurantID" value="@ViewBag.RESTID" type="hidden" />
+    </div>
     <input type="submit" value="Add" class="btn btn-success add-button" />
 </form>
 

@@ -6,6 +6,7 @@ namespace Restaurant.Interfaces
     {
         int CreateItem(Item item);
         int DeleteItem(string ID);
+        List<Item> GetAllItemSR(string ID);
         List<Item> GetAllItems();
         Item getbyid(string ID);
         int UpdateItem(string ID, Item NewItem);

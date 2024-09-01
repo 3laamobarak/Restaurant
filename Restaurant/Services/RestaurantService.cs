@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Services
@@ -35,7 +36,12 @@ namespace Restaurant.Services
         }
         public int DeleteRestaurant(string ID)
         {
+            List<Hall> halls = context.Hall.Include(s=>s.Restaurant).Where(s => s.RestaurantID == ID).ToList();
             var restaurant = context.Restaurant.FirstOrDefault(x => x.Id == ID);
+            foreach (var item in halls)
+            {
+                context.Hall.Remove(item);
+            }
             context.Restaurant.Remove(restaurant);
             return context.SaveChanges();
         }

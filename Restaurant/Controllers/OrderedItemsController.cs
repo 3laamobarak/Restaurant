@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Controllers
 {
+    [Authorize]
     public class OrderedItemsController : Controller
     {
         IOrdered_ItemsService ordered_ItemsService;
@@ -11,9 +13,9 @@ namespace Restaurant.Controllers
         {
             ordered_ItemsService = _ordered_ItemsService;
         }
-        public IActionResult ShowOrderedItems()
+        public IActionResult ShowOrderedItems(string id)
         {
-            List<Ordered_Items> ordered_Items = ordered_ItemsService.GetAllOrdered_Itemss();
+            List<Ordered_Items> ordered_Items = ordered_ItemsService.GetAllOrdered_Itemss(id);
             return View(ordered_Items);
         }
         public IActionResult AddOrderedItems()

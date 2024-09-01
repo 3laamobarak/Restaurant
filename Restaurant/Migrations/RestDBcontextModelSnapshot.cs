@@ -232,10 +232,15 @@ namespace Restaurant.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("RestaurantID")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("TotalTables")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RestaurantID");
 
                     b.ToTable("Hall");
                 });
@@ -262,10 +267,15 @@ namespace Restaurant.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
+                    b.Property<string>("StorageID")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("Type")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StorageID");
 
                     b.ToTable("Item");
                 });
@@ -465,17 +475,11 @@ namespace Restaurant.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ItemId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ItemId");
 
                     b.ToTable("StorageRoom");
                 });
@@ -554,6 +558,24 @@ namespace Restaurant.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Restaurant.Models.Hall", b =>
+                {
+                    b.HasOne("Restaurant.Models.Restaurant", "Restaurant")
+                        .WithMany()
+                        .HasForeignKey("RestaurantID");
+
+                    b.Navigation("Restaurant");
+                });
+
+            modelBuilder.Entity("Restaurant.Models.Item", b =>
+                {
+                    b.HasOne("Restaurant.Models.StorageRoom", "StorageRoom")
+                        .WithMany()
+                        .HasForeignKey("StorageID");
+
+                    b.Navigation("StorageRoom");
                 });
 
             modelBuilder.Entity("Restaurant.Models.Order", b =>
@@ -642,17 +664,6 @@ namespace Restaurant.Migrations
                     b.Navigation("Hall");
 
                     b.Navigation("Manager");
-                });
-
-            modelBuilder.Entity("Restaurant.Models.StorageRoom", b =>
-                {
-                    b.HasOne("Restaurant.Models.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
                 });
 
             modelBuilder.Entity("Restaurant.Models.Table", b =>

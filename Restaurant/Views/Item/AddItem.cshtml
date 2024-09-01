@@ -36,5 +36,8 @@
         <input asp-for="ExpireDate" class="form-control" />
         <span asp-validation-for="ExpireDate" class="text-danger"></span>
     </div>
+    <div>
+        <input asp-for="StorageID" value="@ViewBag.SRID" type="hidden" />
+    </div>
     <input type="submit" value="Add" class="btn btn-success" />
 </form>

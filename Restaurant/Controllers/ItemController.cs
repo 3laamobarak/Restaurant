@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 using Restaurant.Services;
 
 namespace Restaurant.Controllers
 {
+    [Authorize]
     public class ItemController : Controller
     {
         private readonly IItemService itemService;
@@ -13,13 +15,20 @@ namespace Restaurant.Controllers
         {
             itemService = _itemService;
         }
+        public IActionResult ShowItemSR(string id)
+        {
+            List<Item> items = itemService.GetAllItemSR(id);
+            ViewData["SRID"] = id;
+            return View(items);
+        }
         public IActionResult ShowItems()
         {
             List<Item> items = itemService.GetAllItems();
             return View(items);
         }
-        public IActionResult AddItem()
+        public IActionResult AddItem(string SRID)
         {
+            ViewData["SRID"] = SRID;
             return View();
         }
         public IActionResult SaveAddItem(Item item)
@@ -27,7 +36,7 @@ namespace Restaurant.Controllers
             if(ModelState.IsValid)
             {
                 itemService.CreateItem(item);
-                return RedirectToAction("showitems");
+                return RedirectToAction("ShowItemSR");
             }
             return View("additem",item);
         }

@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Services
@@ -11,8 +12,10 @@ namespace Restaurant.Services
         {
             context = _context;
         }
-        public List<Ordered_Items> GetAllOrdered_Itemss()
+        public List<Ordered_Items> GetAllOrdered_Itemss(string id)
         {
+          //  context.Ordered_Items.Include(o => o.Order).Include(i => i.Item).Include(isr => isr.Item.StorageRoom).Include(os => os.Order.Staff).Include(ot => ot.Order.Table)
+          //      .Where(s=>s.)
             return context.Ordered_Items.ToList();
         }
         public Ordered_Items getbyid(string ID)

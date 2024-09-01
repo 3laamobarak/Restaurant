@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MS.Data.Enums;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Controllers
 {
+    [Authorize]
     public class HallController : Controller
     {
         private readonly IHallService hallService;
@@ -14,13 +16,15 @@ namespace Restaurant.Controllers
             hallService = _hallService;
             tableService = _tableService;
         }
-        public IActionResult ShowHalls()
+        public IActionResult ShowHalls(string id)
         {
-            List<Hall> hall =hallService.GetAllHall();
-            return View(hall);
+            ViewData["RESTID"] = id;
+            List<Hall> hallRest = hallService.GetAllHallofRestaurant(id);
+            return View(hallRest);
         }
-        public IActionResult AddHall()
+        public IActionResult AddHall(string RESTID)
         {
+            ViewData["RESTID"] = RESTID;
             return View();
         }
         public IActionResult SaveAddHall(Hall hall)
@@ -38,7 +42,7 @@ namespace Restaurant.Controllers
                     table.HallId = hall.Id;
                     tableService.AddTable(table);
                 }
-                return RedirectToAction("showHalls");
+                return RedirectToAction("ShowHalls");
             }
             return View("AddHall",hall);
         }
@@ -66,8 +70,10 @@ namespace Restaurant.Controllers
         }
         public IActionResult Delete(string ID)
         {
+            Hall hall = hallService.getbyid(ID);
+            string id = hall.RestaurantID;
             hallService.DeleteHall(ID);
-            return RedirectToAction("ShowHalls");
+            return RedirectToAction("ShowHalls",id);
         }
     }
 }

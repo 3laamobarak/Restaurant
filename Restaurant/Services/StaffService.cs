@@ -14,11 +14,11 @@ namespace Restaurant.Services
         }
         public List<Staff> GetAllStaffWithManager(string id)
         {
-            return context.Staff.Where(s => s.Manager.Id == id).ToList();
+            return context.Staff.Include(s => s.Hall).Where(s => s.Manager.Id == id).ToList();
         }
         public List<Staff> GetAllManager()
         {
-            return context.Staff.Where(s=>s.Type ==MS.Data.Enums.StaffType.Manager).ToList();
+            return context.Staff.Include(s=>s.Hall).Where(s=>s.Type ==MS.Data.Enums.StaffType.Manager).ToList();
         }
         public List<Staff> GetAllStaff()
         {

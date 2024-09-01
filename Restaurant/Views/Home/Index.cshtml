@@ -2,7 +2,47 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-@*     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
- *@</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a asp-action="ShowItems" asp-controller="item" id="openModal" class="btn btn-alert-success">Manage Items</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="showallstaff" asp-controller="Staff" id="openModal" class="btn btn-alert-success">Manage Staff</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="ShowRestaurants" asp-controller="Restaurant" id="openModal" class="btn btn-alert-success">Manage Restaurant</a>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-4">
+            <a asp-action="ShowHalls" asp-controller="Hall" id="openModal" class="btn btn-alert-success">Manage Halls</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="ShowStorageRooms" asp-controller="StorageRoom" id="openModal" class="btn btn-alert-success">Manage Storage Room</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="ShowProfit" asp-controller="Profit" id="openModal" class="btn btn-alert-success">Manage Profit</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #openModal {
+        margin-top: 20px;
+        background-color: aquamarine;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #openModal:hover {
+        background-color: #4ec9b0;
+    }
+   
+</style>

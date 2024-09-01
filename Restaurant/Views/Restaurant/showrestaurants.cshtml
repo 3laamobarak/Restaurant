@@ -2,6 +2,8 @@
     Layout = "_Layout2";
 }
 @model List<Restaurant>
+<a asp-action="AddRestaurant" asp-controller="Restaurant" id="openModal" class="btn btn-alert-success">Add Restaurant</a>
+<br/><br/>
 <table class="table">
     <tr>
         <th>Name</th>
@@ -20,8 +22,24 @@
             <td>
                 <a asp-action="Edit" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a> |
                 <a asp-action="Delete" asp-controller="Restaurant" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
-                <a asp-action="ShowHalls" asp-controller="Hall" asp-route-id="@item.Id" >Manage Halls</a>
+                <a asp-action="ShowHalls" asp-controller="Hall" asp-route-id="@item.Id" style="background-color : #001f3f;color:white " class="btn btn-alert-success">Manage Halls</a>
             </td>
         </tr>
     }
 </table>
+<style>
+    #openModal {
+        margin-top: 20px;
+        background-color: aquamarine;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #openModal:hover {
+        background-color: #4ec9b0;
+    }
+</style>

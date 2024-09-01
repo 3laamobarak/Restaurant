@@ -1,5 +1,6 @@
 ﻿using MS.Data.Enums;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Restaurant.Models
 {
@@ -18,8 +19,11 @@ namespace Restaurant.Models
         public double Price { get; set; }
         [Required]
         // number of items ordered
-        public string Amount { get; set; }
+        public int Amount { get; set; }
         public DateTime ExpireDate { get; set; }
+        [ForeignKey("StorageRoom")]
+        public string? StorageID { get; set; }
+        public StorageRoom? StorageRoom { get; set; }
         //public ICollection<StorageRoom> StorageRooms { get; set; }
         //public ICollection<Ordered_Items> OrderedItems { get; set; }
     }

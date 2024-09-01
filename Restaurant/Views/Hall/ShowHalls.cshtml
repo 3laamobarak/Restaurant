@@ -3,7 +3,7 @@
 }
 @model List<Hall>
 
-<a asp-action="AddHall" asp-controller="Hall" id="openModal" class="btn btn-alert-success">Add Hall</a>
+<a asp-action="AddHall" asp-controller="Hall" asp-route-RestID="@ViewBag.RESTID" id="openModal" class="btn btn-alert-success">Add Hall</a>
 <div id="subjectList">
     @foreach (var item in Model)
     {

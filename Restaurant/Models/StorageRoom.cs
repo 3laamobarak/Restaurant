@@ -12,8 +12,8 @@ namespace Restaurant.Models
         [Required]
         public string Address { get; set; }
 
-        [ForeignKey("Item")]
-        public string ItemId { get; set; }
-        public Item Item { get; set; }
+        //[ForeignKey("Item")]
+        //public string? ItemId { get; set; }
+        //public Item? Item { get; set; }
     }
 }

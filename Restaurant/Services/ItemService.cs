@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Services
@@ -10,6 +11,10 @@ namespace Restaurant.Services
         public ItemService(RestDBcontext _context)
         {
             context = _context;
+        }
+        public List<Item> GetAllItemSR(string id)
+        {
+            return context.Item.Include(s => s.StorageRoom).Where(s => s.StorageID == id).ToList();
         }
         public List<Item> GetAllItems()
         {

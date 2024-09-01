@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Services
@@ -28,12 +29,17 @@ namespace Restaurant.Services
             StorageRoom OldstorageRoom = context.StorageRoom.FirstOrDefault(x => x.Id == ID);
             OldstorageRoom.Name = NewstorageRoom.Name;
             OldstorageRoom.Address = NewstorageRoom.Address;
-            OldstorageRoom.Item = NewstorageRoom.Item;
+           
             return context.SaveChanges();
         }
         public int DeleteStorageRoom(string id)
         {
+            List<Item> items = context.Item.Include(s => s.StorageRoom).Where(s => s.StorageID == id).ToList();
             StorageRoom storageRoom = context.StorageRoom.FirstOrDefault(x => x.Id == id);
+            foreach (var item in items)
+            {
+                context.Item.Remove(item);
+            }
             context.StorageRoom.Remove(storageRoom);
             return context.SaveChanges();
         }

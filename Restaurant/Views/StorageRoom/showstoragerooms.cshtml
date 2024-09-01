@@ -1,0 +1,110 @@
+﻿@model List<StorageRoom>
+
+<a asp-action="AddStorageRoom" asp-controller="StorageRoom" id="openModal" class="btn btn-alert-success">Add Storage Room</a>
+<div id="subjectList">
+    @foreach (var item in Model)
+    {
+        <div class="box" id="hall_@item.Id" style="margin: 16px;">
+            <h3 class="box-name">@item.Name</h3>
+            <p class="box-description">@item.Address</p>
+            <div class="box-buttons">
+                <a asp-action="Edit" asp-controller="StorageRoom" asp-route-id="@item.Id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a>
+                <a asp-action="ShowItemSR" asp-controller="item" asp-route-id="@item.Id" style="background-color : #001f3f;color:white " class="btn btn-alert-success">Manage</a>
+                <a asp-action="Delete" asp-controller="StorageRoom" asp-route-id="@item.Id" style="background-color : red" class="btn btn-warning">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: JetBrains Mono, monospace;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #subjectList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s;
+    }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-name {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .box-description, .box-date {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .box-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .edit-button, .delete-button {
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        flex: 1;
+        transition: all 0.3s;
+    }
+
+    .edit-button {
+        background-color: #4CAF50;
+        color: black;
+    }
+
+    .delete-button {
+        background-color: #f44336;
+        color: black;
+    }
+
+        .edit-button:hover, .delete-button:hover {
+            opacity: 0.8;
+        }
+
+    #openModal {
+        margin-top: 20px;
+        background-color: aquamarine;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        #openModal:hover {
+            background-color: #4ec9b0;
+        }
+</style>

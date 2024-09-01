@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MS.Data.Enums;
 using Restaurant.Interfaces;
 using Restaurant.Models;
 
 namespace Restaurant.Controllers
 {
+    [Authorize]
     public class StaffController : Controller
     {
         private readonly IStaffService staffService;
